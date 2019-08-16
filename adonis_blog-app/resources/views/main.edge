@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adonis-blog-project</title>
+    {{ style('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css') }}
+    {{--  //so don't space the style syntax on various lines, it breaks and turns them to comments  --}}
+</head>
+<body>
+    {{--  its 'include' not layout, and string in brackets is inc/ not inc.  --}}
+    @include('inc/navbar')
+    <div class="container">
+      @!section('content')
+    </div>
+
+  {{--  so just ensure the script tags are on one line, multiple lines breaks it  --}}
+  {{ script('https://code.jquery.com/jquery-3.3.1.slim.min.js') }}
+
+  {{ script('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js') }}
+
+  {{ script('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js') }}
+</body>
+</html>

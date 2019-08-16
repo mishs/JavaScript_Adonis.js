@@ -1,2 +1,10 @@
-<h1>Home</h1>
-<p>A Welcome Note to Test</p>
+@layout('main')
+//extending layout from main- study method's way when they have ('')
+//NOTE : ensure to remove extra @ sign that gets created with auto-complete and the ! before section which
+          //is only acceptable in the view file, else- code break. And when code is okay for 
+          //adonis methods, it is highlighted with same color, in here- red.
+
+@section('content')
+    <h1>Home</h1>
+    <p>A Welcome Note to Test</p>
+@endsection
