@@ -1,0 +1,25 @@
+explain code in app/Middleware/ConvertEmptyStringToNull.js
+  Line 8 :           [key]: request.body[key] !== '' ? request.body[key] : null
+
+2) dependencies vs devDependecies
+
+Migrations- files that edit our database
+
+Notes
+  -nodemon auto runs the server 
+//the file is addressed with a capital letter though in the folder (here folder is resources/views/"home.edge") is lower-case
+
+
+
+Questions
+ 
+    Learn about async await the one that uses ES7 functions that uses asynchronous operations- and callbacks and promises;
+    basically use 'async' before the function, and 'await' before things like fetching data from
+    the database
+
+    see the creately.com diagram on the cycle for a post being handles in a controller that
+    fetching it in views
+    basically- the route specifies when a certain url, in this case ('/posts') is hit;
+    then, got to the controller specified afterwards; in this case -> , Postcontrollers.index; index is the 
+    specified post
+    yet index has to be created in the views using adonis make: view ... 
