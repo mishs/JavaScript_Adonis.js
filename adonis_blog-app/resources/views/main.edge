@@ -4,8 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adonis-blog-project</title>
+    //adding bootstrap (css) to project - cdn, used style intead of css in welcome
+    {{ style 
+    ('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css') }}
 </head>
 <body>
     
+    //for javascript used in bootstrap and all other scripts
+    //just pass in the source, not entire script with syntax as in bootstrap
+  {{ script
+   ('https://code.jquery.com/jquery-3.3.1.slim.min.js') 
+  }}
+
+  {{ script
+     ('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+  }}
+
+  {{ script
+     ('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+  }}
 </body>
 </html>
