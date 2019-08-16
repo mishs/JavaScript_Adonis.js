@@ -1,4 +1,8 @@
-<h1>Posts</h1>
-{{--  <h1>{{ title }}</h1>  //this { {title} } incorrect spacing in syntax had it fail.  --}}
 
 //now go to controllers and have the controller render this view
+<h1> {{ title }}</h1>
+<ul>
+    @each(post in posts)
+      <li>{{ post.title }}</li>
+    @endeach
+</ul>
