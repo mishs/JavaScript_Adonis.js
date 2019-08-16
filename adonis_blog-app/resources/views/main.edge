@@ -8,6 +8,8 @@
     {{--  //so don't space the style syntax on various lines, it breaks and turns them to comments  --}}
 </head>
 <body>
+    {{--  its 'include' not layout, and string in brackets is inc/ not inc.  --}}
+    @include('inc/navbar')
     <div class="container">
       @!section('content')
     </div>
