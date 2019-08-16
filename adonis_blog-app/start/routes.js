@@ -17,7 +17,10 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+Route.on('/home').render('home')
 
+// also, just for experimental sake, how do I review view straight from route- using .on?
+//research difference between .on and .get
 //route to access the postcontroller method- index
 //just like ('/') is url to welcome, this one ('/post' ...) below is specifying when post round is hit from (/) home page
    //the second part in quotes, note that else fails(PostController.index) maps to ... .
