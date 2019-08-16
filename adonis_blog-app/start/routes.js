@@ -16,8 +16,8 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('welcome')
-Route.on('/home').render('home')
+Route.on('/').render('home')
+// Route.on('/home').render('home')
 
 // also, just for experimental sake, how do I review view straight from route- using .on?
 //research difference between .on and .get
