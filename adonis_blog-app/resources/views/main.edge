@@ -4,24 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adonis-blog-project</title>
-    //adding bootstrap (css) to project - cdn, used style intead of css in welcome
-    {{ style 
-    ('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css') }}
+    {{ style('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css') }}
+    {{--  //so don't space the style syntax on various lines, it breaks and turns them to comments  --}}
 </head>
 <body>
-    
-    //for javascript used in bootstrap and all other scripts
-    //just pass in the source, not entire script with syntax as in bootstrap
-  {{ script
-   ('https://code.jquery.com/jquery-3.3.1.slim.min.js') 
-  }}
+    <div class="container">
+      @!section('content')
+    </div>
 
-  {{ script
-     ('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
-  }}
+  {{--  so just ensure the script tags are on one line, multiple lines breaks it  --}}
+  {{ script('https://code.jquery.com/jquery-3.3.1.slim.min.js') }}
 
-  {{ script
-     ('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
-  }}
+  {{ script('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js') }}
+
+  {{ script('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js') }}
 </body>
 </html>
